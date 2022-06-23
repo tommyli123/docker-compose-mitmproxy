@@ -2,7 +2,8 @@ FROM mitmproxy/mitmproxy
 WORKDIR /code
 COPY main2.py main2.py
 COPY run2.sh run2.sh
-COPY har_dump.py har_dump.py
+COPY har_dump2.py har_dump2.py
+COPY convert_to_full_har.py convert_to_full_har.py
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 CMD ["/bin/sh", "run2.py"]
